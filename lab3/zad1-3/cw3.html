@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 3</title>
+    <script src="script3.js"></script>
+    <link rel="stylesheet" href="cw3.css" />
+  </head>
+  <body>
+    <h1>Lista produktów</h1>
+    <label>Wyszukaj: </label>
+    <input
+      type="text"
+      id="filter-name"
+      name="filer"
+      oninput="filter(this.value)"
+    /><br />
+    <button id="sort-asc" onclick="sort_products('asc');">
+      Sortuj rosnąco
+    </button>
+    <button id="sort-desc" onclick="sort_products('desc');">
+      Sortuj malejąco
+    </button>
+    <button id="sort-off" onclick="sort_products('default');">
+      Wyłącz sortowanie</button
+    ><br />
+    <ul id="product-list"></ul>
+  </body>
+</html>
