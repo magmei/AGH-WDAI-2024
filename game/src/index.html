@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zombiecide</title>
+    <link rel="icon" href="../img/full_heart.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="info">
+      <div id="hbar">
+        <img class="heart" id="health1" src="../img/full_heart.png" />
+        <img class="heart" id="health2" src="../img/full_heart.png" />
+        <img class="heart" id="health3" src="../img/full_heart.png" />
+      </div>
+      <h2 id="score">20</h2>
+    </div>
+
+    <div id="start-box">
+      <div class="container">
+        <h2>Czy chcesz postrzelać do zombie?</h2>
+        <button id="reset-game" onclick="gameLoad()">TAK!</button>
+      </div>
+    </div>
+    <div id="reset-box">
+      <div class="container">
+        <h2>Przegrałeś!</h2>
+        <h2>Twój wynik to:</h2>
+        <h2 id="final-score"></h2>
+        <button id="reset-game" onclick="gameReset()">JESZCZE RAZ!</button>
+      </div>
+    </div>
+
+    <div id="board"></div>
+    <div id="crosshair"><img src="../img/aim.png" /></div>
+  </body>
+</html>
